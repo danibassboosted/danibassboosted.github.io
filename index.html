@@ -1,26 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi Radio Stream - Inicio de sesión</title>
+    <title>Radio Stream</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Mi Radio Stream - Inicio de sesión</h1>
+    <h1>Radio Stream</h1>
     
-    <form id="login-form">
-        <input type="text" id="username" placeholder="Nombre de usuario" required>
-        <input type="password" id="password" placeholder="Contraseña" required>
-        <button type="submit">Iniciar sesión</button>
-    </form>
-    
-    <div id="upload-container" style="display: none;">
-        <h2>Subir archivo de música</h2>
-        
-        <form id="upload-form" enctype="multipart/form-data">
-            <input type="file" id="music-file" accept="audio/*" required>
-            <button type="submit">Subir</button>
-        </form>
-    </div>
+    <audio id="audio-player" controls></audio>
     
     <script src="script.js"></script>
 </body>
