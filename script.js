@@ -1,6 +1,7 @@
-window.addEventListener('DOMContentLoaded', (event) => {
-    const audioPlayer = document.getElementById('audio-player');
-    
-    audioPlayer.autoplay = true;
-    audioPlayer.load();
+< script src="js/jquery-3.4.1.min.js">
+< script>
+$ (document).ready(function () {
+var audi = document.getElementById("au");
+audi.play();
 });
+< /script>
