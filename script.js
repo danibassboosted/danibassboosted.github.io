@@ -1,22 +1,9 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    const loginForm = document.getElementById('login-form');
-    const uploadContainer = document.getElementById('upload-container');
-    const uploadForm = document.getElementById('upload-form');
+    const audioPlayer = document.getElementById('audio-player');
     
-    loginForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-        
-        // Aquí debes realizar la validación del inicio de sesión con tu lógica de autenticación
-        
-        // Ejemplo de validación básica
-        if (username === 'admin' && password === '1234') {
-            loginForm.style.display = 'none';
-            uploadContainer.style.display = 'block';
-        } else {
-            alert('Credenciales de inicio de sesión incorrectas');
-        }
-    });
+    // Aquí debes configurar la URL de tu archivo de música
+    const musicURL = 'ruta/al/archivo.mp3';
+    
+    audioPlayer.src = musicURL;
+    audioPlayer.play();
 });
